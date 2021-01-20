@@ -1,0 +1,15 @@
+<h1>Autos</h1>
+
+<ul>
+  <% @cars.each do |car| %>
+    <li>
+      <%= car.cr_model %>
+      <%= car.cr_model %>
+      <%= car.cr_year %>
+      <%= car.cr_usage %>
+      <%= car.cr_fuel %>
+      <%= car.cr_fuel / car.cr_usage * 100 %>
+    </li>
+  <% end %>
+</ul>
+

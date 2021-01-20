@@ -1,0 +1,13 @@
+<h1>Auto anzeigen</h1>
+
+
+<p>Hersteller:  </p><p><% @car.producer_id %></p>
+<p>Modell: </p><p><% @car.cr_model %></p>
+<p>Jahr: </p><p><% @car.cr_year %></p>
+<p>Verbrauch/km: </p><p><% @car.cr_usage %></p>
+<p>Benzin l: </p><p><% @car.cr_fuel %></p>
+<p>Reichweite: </p><p><% @car.cr_fuel / @car.cr_usage * 100 %></p>
+
+<button><a href="/car/edit">Ändern</a></button>
+<button><%= link_to "Löschen", edit_article_path(@car) %></button>
+<button><a href="/car/edit">Ändern</a></button>
